@@ -244,8 +244,8 @@ def make_maps(coords: SkyCoord, ext: ExtinctionCatalogue, wcs: astropy.wcs.WCS,
         power[5] = 1
         weights[6, :] = ext_ivar * ext['xnicest_weight']
     # Shifted (unframed) coordinates, to the nearest int
-    x_ = np.rint(xy[:, 1] + kde.kernel_size).astype(np.int)
-    y_ = np.rint(xy[:, 0] + kde.kernel_size).astype(np.int)
+    x_ = np.rint(xy[:, 1] + kde.kernel_size).astype(int)
+    y_ = np.rint(xy[:, 0] + kde.kernel_size).astype(int)
     for iteration in range(n_iters):
         if iteration < n_iters - 1:
             # Faster steps for intermediate iterations

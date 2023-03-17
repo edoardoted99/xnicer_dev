@@ -280,7 +280,7 @@ cdef class KDE:
         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
         cdef long n_planes = 1, coord_i
         cdef long kernel_full_size = self.kernel_size**self.ndim
-        cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+        cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
         cdef float coord, delta, weight = 1.0
         cdef float[:,:] result
 
@@ -341,7 +341,7 @@ cdef class KDE:
         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
         cdef long n_planes = 1, coord_i
         cdef long kernel_full_size = self.kernel_size**self.ndim
-        cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+        cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
         cdef double coord, delta, weight = 1.0
         cdef double[:,:] result
 

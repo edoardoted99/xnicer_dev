@@ -369,7 +369,7 @@ class XDGaussianMixture(GaussianMixture):
         Y, Yerr, projection, log_weight = self._check_Y_Yerr(
             Y, Yerr, Yclass=Yclass, projection=projection,
             log_weight=log_weight)
-        self._check_initial_parameters(Y)
+        super(XDGaussianMixture, self)._check_parameters(Y)
 
         # if we enable warm_start, we will have a unique initialisation
         do_init = not ((self.warm_start or fixpars is not None)

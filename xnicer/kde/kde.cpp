@@ -6986,7 +6986,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_float(struct __pyx_obj_6xnicer_3k
  *         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
  *         cdef long n_planes = 1, coord_i             # <<<<<<<<<<<<<<
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  */
   __pyx_v_n_planes = 1;
 
@@ -6994,7 +6994,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_float(struct __pyx_obj_6xnicer_3k
  *         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
  *         cdef long n_planes = 1, coord_i
  *         cdef long kernel_full_size = self.kernel_size**self.ndim             # <<<<<<<<<<<<<<
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  *         cdef float coord, delta, weight = 1.0
  */
   __pyx_v_kernel_full_size = __Pyx_pow_int(__pyx_v_self->kernel_size, __pyx_v_self->ndim);
@@ -7002,7 +7002,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_float(struct __pyx_obj_6xnicer_3k
   /* "xnicer/kde.pyx":280
  *         cdef long n_planes = 1, coord_i
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)             # <<<<<<<<<<<<<<
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)             # <<<<<<<<<<<<<<
  *         cdef float coord, delta, weight = 1.0
  *         cdef float[:,:] result
  */
@@ -7038,7 +7038,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_float(struct __pyx_obj_6xnicer_3k
 
   /* "xnicer/kde.pyx":281
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  *         cdef float coord, delta, weight = 1.0             # <<<<<<<<<<<<<<
  *         cdef float[:,:] result
  * 
@@ -8422,7 +8422,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_double(struct __pyx_obj_6xnicer_3
  *         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
  *         cdef long n_planes = 1, coord_i             # <<<<<<<<<<<<<<
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  */
   __pyx_v_n_planes = 1;
 
@@ -8430,7 +8430,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_double(struct __pyx_obj_6xnicer_3
  *         cdef long n_objs = coords.shape[0], obj, dim, plane, i, j, k
  *         cdef long n_planes = 1, coord_i
  *         cdef long kernel_full_size = self.kernel_size**self.ndim             # <<<<<<<<<<<<<<
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  *         cdef double coord, delta, weight = 1.0
  */
   __pyx_v_kernel_full_size = __Pyx_pow_int(__pyx_v_self->kernel_size, __pyx_v_self->ndim);
@@ -8438,7 +8438,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_double(struct __pyx_obj_6xnicer_3
   /* "xnicer/kde.pyx":341
  *         cdef long n_planes = 1, coord_i
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)             # <<<<<<<<<<<<<<
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)             # <<<<<<<<<<<<<<
  *         cdef double coord, delta, weight = 1.0
  *         cdef double[:,:] result
  */
@@ -8474,7 +8474,7 @@ static PyObject *__pyx_f_6xnicer_3kde_3KDE_kde_double(struct __pyx_obj_6xnicer_3
 
   /* "xnicer/kde.pyx":342
  *         cdef long kernel_full_size = self.kernel_size**self.ndim
- *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.long)
+ *         cdef long[:] framed_naxis = np.array(self.framed_naxis, dtype=np.int64)
  *         cdef double coord, delta, weight = 1.0             # <<<<<<<<<<<<<<
  *         cdef double[:,:] result
  * 
